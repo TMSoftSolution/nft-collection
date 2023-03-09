@@ -4,7 +4,7 @@ import Search from "@/components/Search";
 import Spinner from "@/components/Spinner";
 import { OwnedNft } from "alchemy-sdk";
 import { useState } from "react";
-import { validate } from "crypto-address-validator-ts";
+import WAValidator from 'wallet-address-validator';
 
 export default function Home() {
   const [isLoading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ export default function Home() {
       alert("Please enter the Wallet address.");
     } else {
       if (
-        validate(address, "eth", { chainType: "Ethereum", networkType: "prod" })
+        WAValidator.validate(address, "eth")
       ) {
         setNfts([]);
         await fetchNFTs(address);
