@@ -2,9 +2,9 @@ import Card from "@/components/Card";
 import Modal from "@/components/Modal";
 import Search from "@/components/Search";
 import Spinner from "@/components/Spinner";
+import { validate } from "@/lib/wallet-validator";
 import { OwnedNft } from "alchemy-sdk";
 import { useState } from "react";
-import WAValidator from 'wallet-address-validator';
 
 export default function Home() {
   const [isLoading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ export default function Home() {
       alert("Please enter the Wallet address.");
     } else {
       if (
-        WAValidator.validate(address, "eth")
+        validate(address, "eth")
       ) {
         setNfts([]);
         await fetchNFTs(address);
