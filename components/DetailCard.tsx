@@ -21,7 +21,7 @@ export default function DetailCard({ nft }: PropsType) {
               width={300}
             />
           </div>
-          <div className="flex-col text-gray-300 px-4">
+          <div className="flex-col break-all text-gray-300 px-8">
             <p className="text-3xl font-bold">{nft?.title}</p>
             <p className="pt-4">{nft?.description}</p>
             <div className="my-4">
