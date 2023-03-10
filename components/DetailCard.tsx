@@ -26,21 +26,21 @@ export default function DetailCard({ nft }: PropsType) {
             <p className="pt-4">{nft?.description}</p>
             <div className="my-4">
               <p className="text-2xl font-semibold" >Contract Information</p>
-              <p className="mt-2"><span className="font-semibold italic">Address:</span> {nft?.contract.address}</p>
-              <p className="mt-1"><span className="font-semibold italic">Deployer:</span> {nft?.contract.contractDeployer}</p>
-              <p className="mt-1"><span className="font-semibold italic">Token ID:</span> {nft?.tokenId}</p>
-              <p className="mt-1"><span className="font-semibold italic">Token Type:</span> {nft?.contract.tokenType}</p>
-              <p className="mt-1"><span className="font-semibold italic">Symbol: </span>{nft?.contract.symbol}</p>
-              <p className="mt-1"><span className="font-semibold italic">Total Supply: </span>{nft?.contract.totalSupply}</p>
+              <p className="mt-2"><span className="font-semibold italic text-white">Address:</span> {nft?.contract.address}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Deployer:</span> {nft?.contract.contractDeployer}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Token ID:</span> {nft?.tokenId}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Token Type:</span> {nft?.contract.tokenType}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Symbol: </span>{nft?.contract.symbol}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Total Supply: </span>{nft?.contract.totalSupply}</p>
             </div>
             <div className="my-4">
               <p className="text-2xl font-semibold" >Marketplace</p>
-              <p className="mt-2"><span className="font-semibold italic">Collection Name:</span> {nft?.contract.openSea?.collectionName}</p>
-              <p className="mt-1"><span className="font-semibold italic">Description: </span>{nft?.contract.openSea?.description}</p>
-              <p className="mt-1"><span className="font-semibold italic">Price: </span>{nft?.contract.openSea?.floorPrice}</p>
-              <p className="mt-1"><span className="font-semibold italic">Website:</span> {nft?.contract.openSea?.externalUrl}</p>
-              <p className="mt-1"><span className="font-semibold italic">Discord:</span> {nft?.contract.openSea?.discordUrl}</p>
-              <p className="mt-1"><span className="font-semibold italic">Twitter: </span>{nft?.contract.openSea?.twitterUsername}</p>
+              <p className="mt-2"><span className="font-semibold italic text-white">Collection Name:</span> {nft?.contract.openSea?.collectionName}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Description: </span>{nft?.contract.openSea?.description}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Price: </span>{nft?.contract.openSea?.floorPrice}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Website:</span> {nft?.contract.openSea?.externalUrl}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Discord:</span> {nft?.contract.openSea?.discordUrl}</p>
+              <p className="mt-1"><span className="font-semibold italic text-white">Twitter: </span>{nft?.contract.openSea?.twitterUsername}</p>
             </div>
           </div>
         </div>
