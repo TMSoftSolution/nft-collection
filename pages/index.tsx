@@ -71,7 +71,7 @@ export default function Home() {
         ) : isLoading ? (
           <></>
         ) : (
-          <div className="text-white text-2xl my-auto">No NFTs Funded.</div>
+          <div className="text-white text-2xl my-auto">No NFTs Founded.</div>
         )}
       </div>
       {showModal && <Modal nft={selectedNft} onClose={() => closeModal()} />}
